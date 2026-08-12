@@ -8,7 +8,7 @@ jobs:
   macos:
     runs-on: macos-14
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Build Universal 2 app
         run: |
           chmod +x macos/build-universal.sh
@@ -22,7 +22,7 @@ jobs:
   windows:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Parse PowerShell source
         shell: powershell
         run: |
